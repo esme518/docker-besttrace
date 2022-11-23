@@ -26,6 +26,6 @@ RUN set -ex \
     && apk --update add --no-cache \
        libc6-compat \
        ca-certificates \
-    && rm -rf /var/cache/apk
+    && rm -rf /tmp/* /var/cache/apk/*
 
 ENTRYPOINT ["besttrace"]
